@@ -13,5 +13,15 @@ namespace OperationTypes
             Result = result;
         }
     }
+
+    public class OperationResult
+    {
+        public OperationStatus Status { get; }
+
+        public OperationResult(OperationStatus status)
+        {
+            Status = status;
+        }
+    }
 }
 
